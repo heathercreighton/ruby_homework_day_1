@@ -96,21 +96,37 @@
 	
 
 #Using Case Statements
+# puts "Give me a number between 1 and 100"
+# guess = gets.chomp.to_i
+
+# num = 26
+
+# case 
+# 	when guess == num
+# 		puts "Wow you are smart!"
+# 	when  guess<= num+5 && guess >= num-5
+	
+# 		puts "ooh so close"
+# 	else
+# 		puts "sorry, that's not correct"
+# end			
+
+
 puts "Give me a number between 1 and 100"
 guess = gets.chomp.to_i
 
 num = 26
 
 case 
-	when guess == 26
+	when guess == num
 		puts "Wow you are smart!"
-	when  guess<= num+5 && guess >= num-5
-	
-		puts "ooh so close"
-	else
-		puts "sorry, that's not correct"
-end			
+	when guess < num
+		puts "That's too low!"
 
+	when guess > num	
+		puts "That's too high!"
+	
+end			
 
 
 
